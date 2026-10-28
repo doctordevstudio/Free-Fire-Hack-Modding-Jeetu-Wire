@@ -80,7 +80,7 @@ def _now() -> int:
 # ------------------------------------------------------------------
 # Login endpoint
 # ------------------------------------------------------------------
-@app.route("/keydock_connect.php", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"])
 def keydock_connect():
     # The app sends form-encoded POST. GET is included for easy debugging
     # via browser; the real client only ever POSTs.
